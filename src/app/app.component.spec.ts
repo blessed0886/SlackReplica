@@ -1,8 +1,8 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { ActiveChatComponent } from './components/active-chat/active-chat.component';
+import { MessageDisplatComponent } from './components/message-display/message-display';
 import { ActiveUsersComponent } from './components/active-users/active-users.component';
-import { PostToActiveChatComponent } from './components/post-to-active-chat/post-to-active-chat.component';
+import { PostMessageComponent } from './components/post-message/post-message.component';
 import { MessageService} from './services/message.service';
 import { CreateMessageService} from './services/create-message.service';
 import { PostComponent } from './components/post/post.component';
@@ -15,11 +15,13 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        ActiveChatComponent,
+        MessageDisplatComponent,
         ActiveUsersComponent,
         PostToActiveChatComponent,
         PostComponent,
-        CreateUserComponent
+        CreateUserComponent,
+        PostMessageComponent,
+        MessageComponent
       ],
       providers:[ MessageService,
       CreateMessageService,

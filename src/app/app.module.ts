@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { ActiveChatComponent } from './components/active-chat/active-chat.component';
+import { MessageDisplayComponent } from './components/message-display/message-display';
 import { ActiveUsersComponent } from './components/active-users/active-users.component';
-import { PostToActiveChatComponent } from './components/post-to-active-chat/post-to-active-chat.component';
-import { PostComponent } from './components/post/post.component';
+import { PostMessageComponent } from './components/post-message/post-message.component';
+import { MessageComponent } from './components/message/message.component';
 import { MessageService } from './services/message.service';
 import { CreateUserService } from './services/create-user.service';
 
@@ -18,12 +18,17 @@ import { CreateUserComponent } from './components/create-user/create-user.compon
 @NgModule({
   declarations: [
     AppComponent,
-    ActiveChatComponent,
+    MessageDisplayComponent,
     ActiveUsersComponent,
+<<<<<<< HEAD
     PostToActiveChatComponent,
     PostComponent,
     CreateUserComponent
 
+=======
+    PostMessageComponent,
+    MessageComponent
+>>>>>>> edbddcd17102248cfb1fca9a3776b3cb10a8aa25
   ],
   imports: [
     FormsModule,
