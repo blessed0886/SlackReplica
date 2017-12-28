@@ -8,8 +8,11 @@ import { ActiveUsersComponent } from './components/active-users/active-users.com
 import { PostToActiveChatComponent } from './components/post-to-active-chat/post-to-active-chat.component';
 import { PostComponent } from './components/post/post.component';
 import { MessageService } from './services/message.service';
+import { CreateUserService } from './services/create-user.service';
+
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { CreateUserComponent } from './components/create-user/create-user.component';
 
 
 @NgModule({
@@ -18,7 +21,8 @@ import { HttpModule } from '@angular/http';
     ActiveChatComponent,
     ActiveUsersComponent,
     PostToActiveChatComponent,
-    PostComponent
+    PostComponent,
+    CreateUserComponent
 
   ],
   imports: [
@@ -26,7 +30,7 @@ import { HttpModule } from '@angular/http';
     BrowserModule,
     HttpModule
   ],
-  providers: [MessageService],
+  providers: [MessageService,CreateUserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -18,9 +18,9 @@ export var MessageObjects = [];//(http:Http) => messages(http);
 // );
 
 export var Users:User[] = [
-  new User("ryan","password1"),
-  new User("donald","password2"),
-  new User("wes","password3")
+  new User("ryan","password1", "ryan@gmail.com"),
+  new User("donald","password2", "dona;d@gmail.com"),
+  new User("wes","password3", "wes@gmail.com")
 ];
 
 export var ActiveUser:User[] = [];

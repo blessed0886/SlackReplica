@@ -6,6 +6,9 @@ import { PostToActiveChatComponent } from './components/post-to-active-chat/post
 import { MessageService} from './services/message.service';
 import { CreateMessageService} from './services/create-message.service';
 import { PostComponent } from './components/post/post.component';
+import { CreateUserComponent } from './components/create-user/create-user.component';
+import { CreateUserService} from './services/create-user.service';
+import { Http, Response } from '@angular/http';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -15,10 +18,13 @@ describe('AppComponent', () => {
         ActiveChatComponent,
         ActiveUsersComponent,
         PostToActiveChatComponent,
-        PostComponent
+        PostComponent,
+        CreateUserComponent
       ],
       providers:[ MessageService,
-      CreateMessageService ],
+      CreateMessageService,
+      CreateUserService,
+      Http],
     }).compileComponents();
   }));
   it('should create the app', async(() => {

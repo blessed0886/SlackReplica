@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CreateUserService } from '../../services/create-user.service'
 
 @Component({
   selector: 'app-active-users',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActiveUsersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private userService:CreateUserService ) { }
 
   ngOnInit() {
+    this.userService.getAllUsers().subscribe(users => console.log(users))
   }
 
 }
